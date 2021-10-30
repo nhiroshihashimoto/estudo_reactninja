@@ -49,7 +49,7 @@ Exemplo:
 ))}
 ```
 
-# Adicionar eventos globais no Stardad
+# Adicionar eventos globais no Standard
 > O Lint Standard por padrão identifica o **alert** como uma ação de violação.
 
 Insira o código abaixo depois de **"dependencies"** no arquivo `package.json` para correção desse problema.
