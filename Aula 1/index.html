@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello World</h1>
+    <div id="app"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.1.0/react.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.1.0/react-dom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.min.js"></script>
+
+    <script type="text/babel">
+        var h1 = React.createElement( 'h1', null, 'Hello h1 React' )
+        ReactDOM.render( h1, document.getElementById('app') )
+
+        ReactDOM.render(
+            <h1>Hello World Babel</h1>, document.getElementById('app')
+        )
+
+        var Title = React.createClass({
+            render: function (){
+                return <h1><span>Hello World Title</span></h1>
+            }
+        })
+
+        ReactDOM.render(
+            <Title />, document.getElementById('app')
+        )
+
+    </script>
+</body>
+</html>
